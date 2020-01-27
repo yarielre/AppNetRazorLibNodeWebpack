@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode development --progress",
-    "prod": "rimraf ../wwwroot/admin && webpack --mode production --progress"
+    "prod": "rimraf ../resources/admin && webpack --mode production --progress"
   },
   "keywords": [],
   "author": "",

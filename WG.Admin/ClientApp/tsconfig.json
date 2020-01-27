@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-      "outDir": "../wwwroot/dist/",
+      "outDir": "../resources/admin/",
       "noImplicitAny": true,
       "module": "es6",
       "target": "es5",

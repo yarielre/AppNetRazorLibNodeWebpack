@@ -12,8 +12,8 @@ module.exports = (env = {}, argv = {}) => {
     }, 
     output: {
       filename: '[name].js',
-      path: path.resolve(__dirname, '../wwwroot/admin'),
-      publicPath: "/dist/"
+      path: path.resolve(__dirname, '../resources/admin'),
+      publicPath: "/admin/"
     },
     resolve: {
       // Add `.ts` and `.tsx` as a resolvable extension.
@@ -49,7 +49,7 @@ module.exports = (env = {}, argv = {}) => {
     config.devtool = 'eval-source-map';
     config.devServer = {
       index: '', // specify to enable root proxying
-      contentBase: path.resolve(__dirname, '../wwwroot/admin'),
+      contentBase: path.resolve(__dirname, '../resources/admin'),
       proxy: {
         context: () => true,
         target: 'https://localhost:5001',
